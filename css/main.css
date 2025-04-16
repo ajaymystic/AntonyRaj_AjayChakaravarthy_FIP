@@ -1,0 +1,740 @@
+/*
+Couples Resort Responsive Build
+4 column grid 
+ */
+
+/*
+    CSS Guide
+
+    1.  General Styles
+    2.  Main Nav
+    3.  Main Hero Image
+    4.  Main Hero Image Contact
+    5.  Why Couples Resort
+    6.  About & FAQ
+    7.  Contact Form
+    8.  Footer
+ */
+
+
+/* 1. ---General Styles--- */
+
+body {
+  font-family: 'Sanchez', 'Times New Roman', serif;
+  color: #626262;
+}
+
+a {
+  text-decoration: none;
+  transition: all .5s ease-in-out;
+}
+
+
+input,
+textarea {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.cr-red {
+  color: #9a2018;
+}
+
+/* 2. ---Main Nav--- */
+
+#main-nav label img {
+  width: 20px;
+  height: 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all .5s ease;
+  margin-bottom: 20px;
+}
+
+#main-nav input,
+#burger-con {
+  display: none;
+}
+
+/* ~ sibling selector */
+
+#main-nav input:checked~#burger-con {
+  display: block;
+}
+
+#main-nav input:checked~label img {
+  transform: rotate(90deg);
+}
+
+#main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#main-nav ul li a {
+  display: block;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  color: #626262;
+}
+
+#main-nav ul li {
+  border-bottom: 1px solid #efefef;
+}
+
+#main-nav ul li:first-child {
+  border-top: 1px solid #efefef;
+}
+
+#main-nav ul li:last-child {
+  margin-bottom: 40px;
+}
+
+#logo {
+  margin-bottom: 20px;
+  max-width: 382px;
+}
+
+/* 3. ---Main Hero Image--- */
+#hero {
+  background: url(../images/hero-main.jpg) no-repeat;
+  height: 200px;
+}
+
+.book-now {
+  background-color: #9a2018;
+  color: #fff;
+  font-size: 16px;
+  transition: all 500ms linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.book-now:hover {
+  background-color: crimson
+}
+
+#book-now-hero {
+  height: 67px;
+}
+
+#hero-heading-box {
+  align-self: end;
+}
+
+.hero-img-h2,
+.hero-img-h3 {
+  background: #fff;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.hero-img-h2 span,
+.hero-img-h3 span {
+  color: #9a2018;
+  font-size: 12px;
+}
+
+.line-separator {
+  margin-top: 20px;
+  border-top: solid 3px #cf6666;
+  padding-top: 20px;
+}
+
+#hero-summary p {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+/* 4. ---Main Hero Image Contact--- */
+
+.fas {
+  font-size: 42px;
+  color: #9a2018;
+  margin: 0 auto;
+  float: left;
+}
+
+.fa-mobile-alt {
+  margin-right: 10px;
+  margin-left: 3px;
+  margin-bottom: 20px;
+}
+
+.fa-map-marker-alt {
+  margin-right: 10px;
+}
+
+#contact {
+  font-size: 11px;
+  background-color: #efefef;
+  padding: 30px 0 30px 0;
+}
+
+/* 5. ---Why Choose Us--- */
+
+#why-choose-us-nav {
+  padding-top: 20px;
+}
+
+#why-choose-us-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+#why-choose-us-nav ul li {
+  margin-bottom: 15px;
+}
+
+#why-choose-us-nav ul li a {
+  color: inherit;
+  padding: 5px;
+}
+
+#why-choose-us-nav ul li a.selected {
+  border-left: #9a2018 solid 5px;
+}
+
+#why-choose-us-hero-con {
+  background: url('../images/why-choose-us-hero.jpg') no-repeat;
+  height: 195px;
+}
+
+#why-choose-us-heading-box {
+  align-self: end;
+}
+
+.why-choose-us-image {
+  float: left;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+.why-choose-us-image-con h2 {
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+
+}
+
+.why-choose-us-image-con p {
+  font-size: 12px;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+.why-choose-us-image-con a {
+  color: #707070;
+  font-size: 12px;
+}
+
+#why-choose-us-bottom-nav {
+  background-color: #cf6666;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px
+}
+
+#why-choose-us-bottom-nav ol {
+  list-style-type: none;
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+#why-choose-us-bottom-nav ol li {
+  display: inline;
+}
+
+#why-choose-us-bottom-nav ol li a {
+  padding: 5px;
+  color: #fff;
+}
+
+/* 6. ---About & FAQ--- */
+
+#about-hero-con {
+  background: url('../images/about-us-hero.jpg') no-repeat;
+  height: 195px;
+}
+
+#about-hero-heading-box {
+  align-self: end;
+}
+
+#about-us-text {
+  padding-bottom: 60px;
+}
+
+#about-us-text p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 22px;
+}
+
+#about-us-text-column2 {
+  font-style: italic;
+}
+
+#faq-con {
+  background-color: #f4f4f4;
+  padding-top: 35px;
+  padding-bottom: 30px;
+}
+
+#faq-con h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#faq-con h2 span {
+  color: #9a2018;
+  font-size: 16px;
+}
+
+.faq-items {
+  margin-bottom: 16px;
+}
+
+.faq-items h3 {
+  background: #e8e7e7;
+  padding: 16px;
+  font-size: 16px;
+}
+
+.faq-items ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.faq-items li {
+  padding: 8px 0;
+  border-bottom: 1px solid #9a2018;
+}
+
+.faq-items a {
+  color: inherit;
+  font-size: 13px;
+
+}
+
+#faq-text-con {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+/* 7. ---Contact--- */
+
+#contact-hero-con {
+  background: url(../images/contact-hero.jpg) no-repeat;
+  height: 195px;
+
+}
+
+#contact-hero-heading-box {
+  align-self: end;
+}
+
+#contact-hero-text {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+#contact-hero-address p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+#contact-hero-address {
+  margin-bottom: 30px;
+}
+
+#contact-hero-address h3 {
+  margin-bottom: 25px;
+}
+
+#contact-hero-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-hero-form input,
+textarea {
+  padding: 22px;
+  border: 2px solid #d6d6d6;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  font: inherit;
+  width: auto;
+}
+
+#contact-hero-form textarea {
+  height: 250px;
+}
+
+#contact-hero-form input[type="submit"] {
+  padding: 12px 28px;
+  background: #9a2018;
+  color: #fff;
+  border: none;
+  transition: all 200ms ease-in;
+  width: 150px;
+  align-self: flex-end;
+}
+
+#contact-hero-form input[type="submit"]:hover {
+  background-color: #626262;
+  border-radius: 0;
+}
+
+/* 8. ---Footer--- */
+
+#footer-hero {
+  background-image: url(../images/footer.jpg);
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 40px;
+  padding-bottom: 80px;
+}
+
+#footer-hero h3 {
+  margin-top: 30px;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+#footer-privacy .line-separator {
+  margin-top: 0px;
+}
+
+#footer-contact-info h3 {
+  font-size: 23px;
+}
+
+#footer-contact-info p {
+  margin-bottom: 20px;
+  line-height: 18px;
+  font-size: 11px;
+}
+
+/* ------------------------End of Homepage-------------------------------------- */
+/* Rooms Page */
+
+.room-section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.room-name {
+  font-size: 14px;
+  color: #626262;
+  margin-bottom: 10px;
+  line-height: 22px
+}
+
+#hero-room {
+  background: url(../images/mobile-rooms-hero.jpg) no-repeat;
+  height: 200px;
+}
+
+.room-img {
+  width: auto;
+  height: 200px;
+  display: flex;
+  margin-bottom: -10px;
+}
+
+.read-more {
+  display: flex;
+  background-color: #9a2018;
+  color: white;
+  font-style: italic;
+  font-size: 14px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+  float: right;
+  margin-top: 10px;
+}
+
+.read-more:hover {
+  background-color: crimson;
+}
+
+/* ------------------------------------------End of Rooms-------------------------------------------- */
+
+/* -----------------------------------------Rooms-Chateaus------------------------------------------- */
+#hero-room-chateause {
+  background: url(../images/mobile-rooms-chateaus.jpg)no-repeat;
+  height: 200px;
+}
+
+.chateaus-gallery {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  gap: 15px;
+}
+
+.room-gallery-img {
+  width: auto;
+  height: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.room-feature-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #626262;
+  line-height: 24px;
+}
+
+.room-feature-list li {
+  margin-bottom: 8px;
+}
+
+#contactform-hero-con {
+  background: url(../images/mobile-contact-form.jpg) no-repeat;
+  height: 200px;
+  background-size: contain;
+  margin-top: 30px;
+}
+
+#contactform-heading-box {
+  align-self: end;
+}
+
+/* Submit Button */
+
+#contact-hero-form button {
+  align-self: end;
+  padding: 12px 28px;
+  background-color: #9a2018;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 16px;
+  width: 40%;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+#contact-hero-form button:hover {
+  animation: pulse-glow 0.6s ease-in-out forwards;
+}
+
+#contact-hero-form button::after {
+  content: '🤩';
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  font-size: 18px;
+}
+
+#contact-hero-form button:hover::after {
+  animation: spinStar 0.6s ease-in-out forwards;
+}
+
+@keyframes pulse-glow {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(154, 32, 24, 0.5);
+  }
+
+  50% {
+    transform: scale(1.3);
+    box-shadow: 0 0 15px rgba(154, 32, 24, 0.8);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(154, 32, 24, 0.5);
+  }
+}
+
+@keyframes spinStar {
+  0% {
+    right: -30px;
+    transform: translateY(-50%) rotate(0deg);
+    opacity: 0;
+  }
+
+  50% {
+    right: 8px;
+    transform: translateY(-50%) rotate(180deg);
+    opacity: 1;
+  }
+
+  100% {
+    right: 8px;
+    transform: translateY(-50%) rotate(360deg);
+    opacity: 1;
+  }
+}
+
+#checkbox {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: #7f7f7f;
+}
+
+#checkbox input[type=checkbox]:checked~span::after {
+  margin-left: 5px;
+  content: '😘';
+}
+
+
+
+/* ------------------------------------------End of Rooms-Chateaus-------------------------------------------- */
+
+/* ----------------------------------------------------Spa--------------------------------------------------- */
+
+#hero-spa {
+  background: url(../images/mobile-spa-hero.jpg)no-repeat;
+  height: 200px;
+}
+
+#spa-hero-heading-box {
+  align-self: end;
+}
+
+#spa-hero-con {
+  background: url('../images/mobile-spa-spaservices.jpg') no-repeat;
+  height: 195px;
+}
+
+.spa-service {
+  margin-bottom: 30px;
+  align-self: start;
+}
+
+.spa-service-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+.spa-service h4 {
+  font-size: 16px;
+  color: #9a2018;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.spa-service p {
+  font-size: 14px;
+  color: #626262;
+  line-height: 20px;
+}
+
+#spapackage-hero-con {
+  background: url(../images/mobile-spa-package.jpg) no-repeat;
+  height: 200px;
+}
+
+#spapackage-hero-heading-box {
+  align-self: end;
+}
+
+.spa-package {
+  margin-bottom: 30px;
+}
+
+#spa-package-text {
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#spa-package-text p {
+  font-size: 14px;
+  margin-bottom: 5px;
+  line-height: 22px;
+  color: #626262;
+}
+
+.spa-package-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+.spa-package h4 {
+  font-size: 16px;
+  color: #9a2018;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+#spa-fac-hero-con {
+  background: url(../images/mobile-spa-facities.jpg)no-repeat;
+  height: 200px;
+}
+
+#spa-fac-hero-heading-box {
+  align-self: end;
+}
+
+.spa-fac-text {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.spa-policies {
+  font-size: 18px;
+  color: #626262;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+
+.spa-info {
+  margin-bottom: 15px;
+  border: 1px solid #d6d6d6;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  font-size: 14px;
+  line-height: 22px;
+  color: #626262;
+}
+
+.spa-info summary {
+  font-weight: bold;
+  cursor: pointer;
+  color: #9a2018;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.spa-info p {
+  margin-top: 10px;
+}
