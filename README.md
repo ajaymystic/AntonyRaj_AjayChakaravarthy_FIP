@@ -1,4 +1,4 @@
-# Couples Resort Website – Final Interactive Project (FIP)
+# Couples Resort Website – Final Integrated Project (FIP)
 
 Welcome to the official repository for the **Couples Resort Website – Final Intergrated Project**. This project was created as part of the **Multi-Media Authoring 1 and Multi-Media Production** course's in the **Interactive Media Design** program at Fanshawe College.
 
